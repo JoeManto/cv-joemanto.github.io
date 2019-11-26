@@ -10,7 +10,7 @@ import { Haptic } from "./projects/haptic";
 
 
 import { Provider } from 'react-redux';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter,BrowserRouter, Route, Switch } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
 
 
@@ -31,13 +31,13 @@ function App() {
   return(
       <div className={"App"}>
 
-          <BrowserRouter history={history} basename={process.env.PUBLIC_URL}>
+          <HashRouter basename={process.env.PUBLIC_URL}>
             <Switch>
-              <Route exact path="/" component={App} />
+              <Route exact path="/" component={Landing} />
               <Route path="/projects" component={Projects} />
               <Route component={() => (<div>404 Not found </div>)} />
             </Switch>
-          </BrowserRouter>
+          </HashRouter>
 
       </div>
   )
