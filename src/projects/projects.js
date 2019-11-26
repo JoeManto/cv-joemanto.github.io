@@ -12,6 +12,8 @@ function TechBubble(props) {
       return "#2196f3";
     } else if (tech === "open-source"){
       return  "#ffca28";
+    } else if  (tech === "cocoa-script"){
+      return "#2196f3";
     }
     else{
       return "#212121";
@@ -19,7 +21,7 @@ function TechBubble(props) {
   };
   const style = {
     backgroundColor: getBackgroundForTech(props.tech),
-    borderRadius: "15%",
+    borderRadius: "15px",
     padding: "8px",
     marginRight: "10px"
   };
@@ -85,11 +87,11 @@ export class Projects extends React.Component {
           backgroundColor={"blue"}
           date={"2016"}
           disc={"Sheetie is a sketch 3 plugin developed for indie game developers in mind. Sheetie creates vectorized sprite sheets objects that are automatically placed and rendered into a sketch art-board"}
-          tech={[<TechBubble tech = "obj-c"/>,<TechBubble tech = "open-source"/>]}
+          tech={[<TechBubble tech = "cocoa-script"/>,<TechBubble tech = "open-source"/>]}
         />
         <Project
-          name={"Sheetie"}
-          link={"projects/sheetie"}
+          name={"One Palette"}
+          link={"projects/onepalette"}
           backgroundColor={"blue"}
           date={"2019"}
           disc={"hello"}
@@ -116,7 +118,7 @@ export function GithubLogoLink(props){
   };
   return(
       <div className={"space-left flexRow"}>
-        <img width={"50px"} height={"50px"} className={"flexRowElement"} src = {githublogo} alt={"github logo"}/>
+        <img width={"25px"} height={"25px"} className={"flexRowElement"} src = {githublogo} alt={"github logo"}/>
         <a href = {props.link} style={textStyle}>{props.text}</a>
       </div>
   )

@@ -2,9 +2,12 @@
   --main-color: #212121;
 }
 
+body{
+  text-align: left;
+}
+
 .App {
   font-family: sans-serif;
-  text-align: center;
 }
 
 .menu-cnt {
@@ -99,11 +102,9 @@
 .image {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   margin-bottom: 10%;
 }
 .image-subtitle {
-  float: right;
   font-size: 0.8em;
   font-weight: bold;
   color:lightgray;

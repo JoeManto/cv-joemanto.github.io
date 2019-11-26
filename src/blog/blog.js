@@ -1,7 +1,9 @@
 import React from "react";
 import image from "./res/image.png";
 import Highlight from "react-highlight";
+import {ContentPlain,ContentText} from "../components/Components";
 import "../styles.css";
+
 
 class MenuButton extends React.Component {
   render() {
@@ -49,6 +51,7 @@ export class Menu extends React.Component {
     return (
       <div className={"menu-cnt"}>
         <MenuButton onChange={this.handleMenuClick} />
+
         {!this.state.closed ? (
           <div className={"menu-elements-cnt up"}>
             {this.props.names.map((obj, i) => {
@@ -58,21 +61,15 @@ export class Menu extends React.Component {
             })}
           </div>
         ) : (
-          [
-            !this.state.firstRender && (
-              <div className={"menu-elements-cnt down"}>
-                {this.props.names.map((obj, i) => {
-                  return (
-                    <MenuElement
-                      key={i}
-                      name={obj}
-                      link={this.props.links[i]}
-                    />
-                  );
-                })}
-              </div>
-            )
-          ]
+          [!this.state.firstRender && (
+            <div className={"menu-elements-cnt down"}>
+              {this.props.names.map((obj, i) => {
+                return (
+                  <MenuElement key={i} name={obj} link={this.props.links[i]}/>
+                );
+              })}
+            </div>
+          )]
         )}
       </div>
     );
@@ -96,8 +93,8 @@ export function JMImage(props) {
   return (
     <div className={"image"}>
       <img className={props.position} src={props.src} width={props.width} height={props.height} alt={props.alt} />
-      {props.subtitle !== "" && (
-        <label className={"image-subtitle"}>{props.subtitle}</label>
+      {props.subtitle && (
+        <h6 className={"image-subtitle"}>{props.subtitle}</h6>
       )}
     </div>
   );
@@ -117,8 +114,8 @@ export function BlogPost() {
   return (
     <div className="App">
       <Header name={"header-name"} subtitle={"this is a subtitle"} />
-      <div className={"content-cnt"}>
-        <p className={"content-text"}>
+      <ContentPlain>
+          <ContentText text = {`
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
@@ -128,8 +125,8 @@ export function BlogPost() {
           the release of Letraset sheets containing Lorem Ipsum passages, and
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum
-        </p>
-        <p className={"content-text"}>
+          `}/>
+        <ContentText text = {`
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
@@ -139,8 +136,10 @@ export function BlogPost() {
           the release of Letraset sheets containing Lorem Ipsum passages, and
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum
-        </p>
+          `}/>
+
         <JMImage src={image} alt={"image"} subtitle={"this is a subtitle"} />
+
         <JMCode
           code={`function JMImage(props) {
             return (
@@ -154,7 +153,7 @@ export function BlogPost() {
           }`}
           language={"javascript"}
         />
-      </div>
+      </ContentPlain>
     </div>
   );
 }
