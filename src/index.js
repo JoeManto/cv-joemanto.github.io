@@ -18,28 +18,25 @@ function App() {
     <div className={"App"}>
       <Router>
         <Switch>
-          <Route path="/blog">
+          <Route path = {process.env.PUBLIC_URL + "/blog"}>
             <BlogPost />
           </Route>
-
-          <Route path="/UX">
+          <Route path = {process.env.PUBLIC_URL + "/UX"}>
             <UX />
           </Route>
-          <Route path="/projects/haptic">
+          <Route path= {process.env.PUBLIC_URL + "/projects/haptic"}>
             <Haptic />
           </Route>
-          <Route path="/projects/onepalette">
+          <Route path = {process.env.PUBLIC_URL +"/projects/onepalette"}>
             <OnePalette />
           </Route>
-          <Route path="/projects/sheetie">
+          <Route path = {process.env.PUBLIC_URL +"/projects/sheetie"}>
             <Sheetie />
           </Route>
-          <Route path="/projects">
+          <Route path = {process.env.PUBLIC_URL + "/projects"}>
             <Projects />
           </Route>
-
-          <Route path="/users" />
-          <Route path="/">
+          <Route path = {process.env.PUBLIC_URL +"/"}>
             <Landing />
           </Route>
         </Switch>
