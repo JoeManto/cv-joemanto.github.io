@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.b100e6da.chunk.css",
-    "main.js": "/static/js/main.1ae79a6e.chunk.js",
-    "main.js.map": "/static/js/main.1ae79a6e.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.6c513046.js",
-    "runtime-main.js.map": "/static/js/runtime-main.6c513046.js.map",
-    "static/js/2.a94e9ee1.chunk.js": "/static/js/2.a94e9ee1.chunk.js",
-    "static/js/2.a94e9ee1.chunk.js.map": "/static/js/2.a94e9ee1.chunk.js.map",
+    "main.css": "/static/css/main.74cacf13.chunk.css",
+    "main.js": "/static/js/main.19478fe0.chunk.js",
+    "main.js.map": "/static/js/main.19478fe0.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.c319c0d2.chunk.js": "/static/js/2.c319c0d2.chunk.js",
+    "static/js/2.c319c0d2.chunk.js.map": "/static/js/2.c319c0d2.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.beae4967219dedeced5714017c2004a9.js": "/precache-manifest.beae4967219dedeced5714017c2004a9.js",
+    "precache-manifest.3588bd7606aea1e63f1b90c34c2072f0.js": "/precache-manifest.3588bd7606aea1e63f1b90c34c2072f0.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.b100e6da.chunk.css.map": "/static/css/main.b100e6da.chunk.css.map",
-    "static/media/logo.svg": "/static/media/logo.25bf045c.svg"
-  },
-  "entrypoints": [
-    "static/js/runtime-main.6c513046.js",
-    "static/js/2.a94e9ee1.chunk.js",
-    "static/css/main.b100e6da.chunk.css",
-    "static/js/main.1ae79a6e.chunk.js"
-  ]
+    "static/css/main.74cacf13.chunk.css.map": "/static/css/main.74cacf13.chunk.css.map",
+    "static/media/HapticFeedBack.png": "/static/media/HapticFeedBack.0df33438.png",
+    "static/media/HapticFeedBack2.png": "/static/media/HapticFeedBack2.42ddad61.png",
+    "static/media/OnePaletteColorExport.png": "/static/media/OnePaletteColorExport.7da8edce.png",
+    "static/media/OnePaletteEditColors.png": "/static/media/OnePaletteEditColors.dba394b4.png",
+    "static/media/OnePaletteLogo.png": "/static/media/OnePaletteLogo.3b6b3749.png",
+    "static/media/OnePaletteMenuView.png": "/static/media/OnePaletteMenuView.ba138882.png",
+    "static/media/image.png": "/static/media/image.f5e602f4.png",
+    "static/media/profilepic.png": "/static/media/profilepic.ce269237.png",
+    "static/media/profilepic2.png": "/static/media/profilepic2.4e97d78c.png",
+    "static/media/sheetie_logo.png": "/static/media/sheetie_logo.03ea8afb.png"
+  }
 }
