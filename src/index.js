@@ -7,40 +7,44 @@ import { Projects } from "./projects/projects.js";
 import { Sheetie } from "./projects/sheetie.js";
 import { OnePalette } from "./projects/onePalette";
 import { Haptic } from "./projects/haptic";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { ConnectedRouter } from 'react-router-redux'
+import { Provider } from 'react-redux'
 
 export let host = () => {
   return "";
 };
 
 function App() {
+
+
   return (
     <div className={"App"}>
-      <Router>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Switch>
-          <Route path = {process.env.PUBLIC_URL + "/blog"}>
+          <Route path = {"/blog"}>
             <BlogPost />
           </Route>
-          <Route path = {process.env.PUBLIC_URL + "/UX"}>
+          <Route path = {"/UX"}>
             <UX />
           </Route>
-          <Route path= {process.env.PUBLIC_URL + "/projects/haptic"}>
+          <Route path= {"/projects/haptic"}>
             <Haptic />
           </Route>
-          <Route path = {process.env.PUBLIC_URL +"/projects/onepalette"}>
+          <Route path = {"/projects/onepalette"}>
             <OnePalette />
           </Route>
-          <Route path = {process.env.PUBLIC_URL +"/projects/sheetie"}>
+          <Route path = {"/projects/sheetie"}>
             <Sheetie />
           </Route>
-          <Route path = {process.env.PUBLIC_URL + "/projects"}>
+          <Route path = {"/projects"}>
             <Projects />
           </Route>
-          <Route path = {process.env.PUBLIC_URL +"/"}>
+          <Route path = {"/"}>
             <Landing />
           </Route>
         </Switch>
-      </Router>
+      </BrowserRouter>
     </div>
   );
 }
