@@ -36,7 +36,6 @@ class Project extends React.Component {
   }
 
   handleHover = (e) => {
-
     this.setState({ hovered: !this.state.hovered });
   };
 
