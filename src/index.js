@@ -5,6 +5,8 @@ import { Landing } from "./landing.js";
 import { UX } from "./UX/UX.js";
 import { Projects } from "./projects/projects.js";
 import { Sheetie } from "./projects/sheetie.js";
+import { OnePalette } from "./projects/onePalette";
+import { Haptic } from "./projects/haptic";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 export let host = () => {
@@ -23,7 +25,12 @@ function App() {
           <Route path="/UX">
             <UX />
           </Route>
-
+          <Route path="/projects/haptic">
+            <Haptic />
+          </Route>
+          <Route path="/projects/onepalette">
+            <OnePalette />
+          </Route>
           <Route path="/projects/sheetie">
             <Sheetie />
           </Route>

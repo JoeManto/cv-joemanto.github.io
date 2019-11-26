@@ -14,6 +14,8 @@ function TechBubble(props) {
       return  "#ffca28";
     } else if  (tech === "cocoa-script"){
       return "#2196f3";
+    } else if (tech === "IOS"){
+      return "#2196f3";
     }
     else{
       return "#212121";
@@ -79,7 +81,8 @@ export class Projects extends React.Component {
   render() {
     return (
       <div className={"content-cnt"}>
-        <Header name={"Projects"} subtitle={"subtitle"} />
+        <Header name={"Projects"} subtitle={"Below are some of my featured projects that i've been working on."} />
+        <GithubLogoLink link = {"https://www.github.com/JoeManto"} target = {"_blank"} text = {"View Profile"}/>
         <div className={"projectsList-cnt slideRight"}>
         <Project
           name={"Sheetie"}
@@ -94,14 +97,16 @@ export class Projects extends React.Component {
           link={"projects/onepalette"}
           backgroundColor={"blue"}
           date={"2019"}
-          disc={"hello"}
+          disc={"OnePalette is a modern material design color palette that allows for quick and intuitive color lookups. OnePalette was designed and implemented for frontend devs and UX designs in mind, Letting developers stay on track and keep creating."}
+          tech={[<TechBubble tech = "swift"/>,<TechBubble tech = "open-source"/>]}
         />
         <Project
-          name={"Sheetie"}
-          link={"projects/sheetie"}
+          name={"Haptic"}
+          link={"projects/haptic"}
           backgroundColor={"blue"}
           date={"2019"}
-          disc={"hello"}
+          disc={"Haptic is an IOS keyboard extension that provides 'haptic feedback'. Haptic is in the App Store as 'Haptic Feedback Keyboard'"}
+          tech={[<TechBubble tech = "swift"/>,<TechBubble tech = "IOS"/>]}
         />
       </div>
       </div>

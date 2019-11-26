@@ -131,3 +131,19 @@ body{
 .space-left{
   margin-left: 10%;
 }
+
+.bounceImage {
+  animation: bounceImage 3s infinite ease-in-out;
+}
+
+@keyframes bounceImage {
+  0%,100% {
+    padding-top: 0;
+  }
+  30%{
+    padding-top: 30px;
+  }
+  70%{
+    padding-top: 30px;
+  }
+}

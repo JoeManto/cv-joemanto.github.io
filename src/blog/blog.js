@@ -84,14 +84,18 @@ export function Header(props) {
         links={["/", "/Blog", "/projects", "/UX", "/#info-cnt"]}
       />
       <h1 className={"header-name"}>{props.name}</h1>
-      <h5 className={"header-sub"}>{props.subtitle}</h5>
+      <p className={"header-sub"}>{props.subtitle}</p>
     </div>
   );
 }
 
 export function JMImage(props) {
+    let className = "image";
+    if(props.ani){
+        className = "image "+props.ani;
+    }
   return (
-    <div className={"image"}>
+    <div className={className}>
       <img className={props.position} src={props.src} width={props.width} height={props.height} alt={props.alt} />
       {props.subtitle && (
         <h6 className={"image-subtitle"}>{props.subtitle}</h6>
@@ -111,7 +115,17 @@ export function JMCode(props) {
 }
 
 export function BlogPost() {
-  return (
+
+    return (
+      <div style={{position:"fixed",top:"40%",left:"30%"}}>
+          <h1>Page is not ready yet 👨🏽‍🚀</h1>
+          <p>Working on adding blog posts</p>
+
+          <p>In the meantime enjoy a random quote <strong>"Reading without reflecting is like eating without digesting."</strong> - Edmund Burke </p>
+      </div>
+    );
+
+  /*return (
     <div className="App">
       <Header name={"header-name"} subtitle={"this is a subtitle"} />
       <ContentPlain>
@@ -155,5 +169,5 @@ export function BlogPost() {
         />
       </ContentPlain>
     </div>
-  );
+  );*/
 }
