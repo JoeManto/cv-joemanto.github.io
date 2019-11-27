@@ -7,44 +7,43 @@ import { Projects } from "./projects/projects.js";
 import { Sheetie } from "./projects/sheetie.js";
 import { OnePalette } from "./projects/onePalette";
 import { Haptic } from "./projects/haptic";
+import { Route, HashRouter } from 'react-router-dom';
+import './styles.css';
+import './landingStyles.css';
 
-
-import { Provider } from 'react-redux';
-import { HashRouter,BrowserRouter, Route, Switch } from 'react-router-dom';
-import createHistory from 'history/createBrowserHistory';
-
-
-
-const history = createHistory({
-  basename: process.env.PUBLIC_URL,
-});
-
-
-export let host = () => {
-  return "";
-};
-
-function App() {
+console.log(HashRouter.hash);
+class App extends React.Component {  render() {
+    return (
+        <div className={"App"}>
+        <HashRouter>
+            <Route exact path='/' component={Landing} />
+            <Route exact path='/projects/sheetie' component={Sheetie} />
+            <Route exact path='/projects' component={Projects} />
+        </HashRouter>
+        </div>
+    )
+}}
 
 
 
+/*
   return(
       <div className={"App"}>
 
-          <HashRouter basename={process.env.PUBLIC_URL}>
+          <BrowserRouter basename={'/'}>
             <Switch>
               <Route exact path="/" component={Landing} />
-              <Route path="/projects" component={Projects} />
+              <Route path={`${process.env.PUBLIC_URL}/projects`} component={Projects} />
               <Route component={() => (<div>404 Not found </div>)} />
             </Switch>
-          </HashRouter>
+          </BrowserRouter>
 
       </div>
-  )
-  /*
-  return (
+  )*/
+
+  /*return (
     <div className={"App"}>
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter basename='/'>
         <Switch>
           <Route path = {"/blog"}>
             <BlogPost />
@@ -68,10 +67,24 @@ function App() {
             <Landing />
           </Route>
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );*/
-}
+  /*console.log(process.env.PUBLIC_URL);
+  return (
+      <div className={"App"}>
+          <HashRouter basename='/'>
+              <Route path = {"projects/sheetie"} component = {Sheetie}/>
+              <Route path = {"/onepalette"} component = {OnePalette}/>
+              <Route path = {"/haptic"} component = {Haptic}/>
+              <Route path = {"/projects"} component = {Projects}/>
+              <Route path = {"/UX"} component = {UX}/>
+              <Route path = {"/blog"} component = {BlogPost}/>
+              <Route exact path="/" component = {Landing} />
+          </HashRouter>
+      </div>
+  );
+}*/
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);

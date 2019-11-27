@@ -2,6 +2,7 @@ import React from "react";
 import image from "./res/image.png";
 import Highlight from "react-highlight";
 import {ContentPlain,ContentText} from "../components/Components";
+import {Link} from 'react-router-dom';
 import "../styles.css";
 
 
@@ -22,12 +23,14 @@ class MenuButton extends React.Component {
     );
   }
 }
-
-function MenuElement(props) {
-  return (
+/*
     <a className={"menu-links"} href={props.link}>
       {props.name}
     </a>
+ */
+function MenuElement(props) {
+  return (
+      <Link to={props.link}>{props.name}</Link>
   );
 }
 

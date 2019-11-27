@@ -3,6 +3,7 @@ import "../styles.css";
 import "./projectsStyle.css";
 import { Header } from "../blog/blog.js";
 import githublogo from "../res/githublogo.png"
+import {Link} from "react-router-dom";
 
 function TechBubble(props) {
   const getBackgroundForTech = tech => {
@@ -42,7 +43,7 @@ class Project extends React.Component {
   handleHover = (e) => {
     this.setState({ hovered: !this.state.hovered });
   };
-
+//<a ref={"link"} href={this.props.link} className={"hiddenLink"}>a</a>
   render() {
     return (
       <div
@@ -55,7 +56,11 @@ class Project extends React.Component {
         className={"project-cnt"}
       >
         <div style={{display:"inline-block"}} className={"flexColumn"}>
-          <a ref={"link"} href={this.props.link} className={"hiddenLink"}>a</a>
+
+          <div style={{display:"none"}}>
+            <Link ref = {"link"} to={this.props.link}>a</Link>
+          </div>
+
           <h1 className={"flexColumnElem"}>{this.props.name}</h1>
           {this.state.hovered &&
             <div id={"viewProject-cnt"} className = {"growRight"}>
