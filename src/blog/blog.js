@@ -23,15 +23,27 @@ class MenuButton extends React.Component {
     );
   }
 }
-/*
-    <a className={"menu-links"} href={props.link}>
-      {props.name}
-    </a>
- */
-function MenuElement(props) {
-  return (
-      <Link to={props.link}>{props.name}</Link>
-  );
+
+class MenuElement extends React.Component{
+    constructor(props){
+        super(props);
+
+        this.handleClick = this.handleClick.bind(this);
+    }
+    handleClick = () => {
+        this.refs.link.click();
+    };
+
+    render() {
+        return (
+            <div>
+                <h4 style={{margin:"10px"}} onClick={()=>{this.handleClick()}}>{this.props.name}</h4>
+                <div style={{display:"none"}}>
+                    <Link ref="link" to={this.props.link}>{this.props.name}</Link>
+                </div>
+            </div>
+        )
+    }
 }
 
 export class Menu extends React.Component {
