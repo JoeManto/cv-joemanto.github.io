@@ -1,12 +1,13 @@
 import React from "react";
 import "../styles.css";
 import "./projectsStyle.css";
-import { Header } from "../blog/blog.js";
+import { Header } from "../components/components.js";
 import githublogo from "../res/githublogo.png"
 import {Link} from "react-router-dom";
 
 function TechBubble(props) {
-  const getBackgroundForTech = tech => {
+
+  const background = tech => {
     if (tech === "swift") {
       return "#ff9500";
     } else if (tech === "obj-c"){
@@ -23,7 +24,7 @@ function TechBubble(props) {
     }
   };
   const style = {
-    backgroundColor: getBackgroundForTech(props.tech),
+    backgroundColor: background(props.tech),
     borderRadius: "15px",
     padding: "8px",
     marginRight: "10px"
@@ -86,23 +87,15 @@ export class Projects extends React.Component {
   render() {
     return (
       <div className={"content-cnt"}>
-        <Header name={"Projects"} subtitle={"Below are some of my featured projects that i've been working on."} />
+        <Header name={"Projects"} subtitle={"Featured Projects"} />
         <GithubLogoLink link = {"https://www.github.com/JoeManto"} target = {"_blank"} text = {"View Profile"}/>
         <div className={"projectsList-cnt slideRight"}>
-        <Project
-          name={"Sheetie"}
-          link={"/projects/sheetie"}
-          backgroundColor={"blue"}
-          date={"2016"}
-          disc={"Sheetie is a sketch 3 plugin developed for indie game developers in mind. Sheetie creates vectorized sprite sheets objects that are automatically placed and rendered into a sketch art-board"}
-          tech={[<TechBubble tech = "cocoa-script"/>,<TechBubble tech = "open-source"/>]}
-        />
         <Project
           name={"One Palette"}
           link={"projects/onepalette"}
           backgroundColor={"blue"}
           date={"2019"}
-          disc={"OnePalette is a modern material design color palette that allows for quick and intuitive color lookups. OnePalette was designed and implemented for frontend devs and UX designs in mind, Letting developers stay on track and keep creating."}
+          disc={"OnePalette is a modern material design color palette that allows for quick and intuitive color lookups. OnePalette was designed and implemented for frontend devs and UX designs in mind, Allowing developers and designers stay on track and keep creating."}
           tech={[<TechBubble tech = "swift"/>,<TechBubble tech = "open-source"/>]}
         />
         <Project
@@ -112,6 +105,14 @@ export class Projects extends React.Component {
           date={"2019"}
           disc={"Haptic is an IOS keyboard extension that provides 'haptic feedback'. Haptic is in the App Store as 'Haptic Feedback Keyboard'"}
           tech={[<TechBubble tech = "swift"/>,<TechBubble tech = "IOS"/>]}
+        />
+        <Project
+          name={"Sheetie"}
+          link={"/projects/sheetie"}
+          backgroundColor={"blue"}
+          date={"2016"}
+          disc={"Sheetie is a sketch 3 plugin developed for indie game developers in mind. Sheetie creates vectorized sprite sheets objects that are automatically placed and rendered into a sketch art-board"}
+          tech={[<TechBubble tech = "cocoa-script"/>,<TechBubble tech = "open-source"/>]}
         />
       </div>
       </div>

@@ -1,10 +1,8 @@
 import React from "react";
-import { Header } from "../blog/blog.js";
 import "../landingStyles.css";
 import sheetieLogoSrc from "./res/sheetie_logo.png";
-import {JMImage,JMCode} from "../blog/blog";
 import {GithubLogoLink} from "./projects";
-import {ContentPlain,ContentText} from "./../components/Components.js";
+import {ContentPlain,ContentText,JMCode,JMImage,Header} from "./../components/components.js";
 
 export class Sheetie extends React.Component {
   render() {

@@ -1,14 +1,13 @@
 import React from "react";
-import { Header } from "../blog/blog.js";
 import "../landingStyles.css";
 import "../styles.css";
 import OnePaletteLogo from "./res/OnePaletteLogo.png";
 import OnePaletteColorExport from "./res/OnePaletteColorExport.png";
 import OnePaletteMenuView from "./res/OnePaletteMenuView.png"
 import OnePaletteEditView from "./res/OnePaletteEditColors.png"
-import {JMImage,JMCode} from "../blog/blog";
+
 import {GithubLogoLink} from "./projects";
-import {ContentPlain,ContentText} from "./../components/Components.js";
+import {ContentPlain,ContentText,JMImage,JMCode,Header} from "./../components/components.js";
 
 export class OnePalette extends React.Component {
     render() {

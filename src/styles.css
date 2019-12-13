@@ -1,9 +1,15 @@
+a {
+  text-decoration: none;
+  color:#212121
+}
+
 :root {
   --main-color: #212121;
 }
 
 body{
   text-align: left;
+  background: white;
 }
 
 .App {
@@ -31,7 +37,6 @@ body{
   margin-top: 30px;
   display: flex;
   flex-direction: column;
-  height: 0;
   overflow: hidden;
   background-color: white;
 }
@@ -146,4 +151,41 @@ body{
   70%{
     padding-top: 30px;
   }
+}
+
+.btn-cnt-1{
+  display: inline-block;
+  border-radius: 13px;
+  height: 50px;
+  width: 100px;
+  background: #ee0979; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff6a00,
+    #ee0979
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff6a00,
+    #ee0979
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.btn-style-1{
+  display: block;
+  width:90px;
+  height: 40px;
+  border: none;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: larger;
+  background: #FAFAFA;
+  color:var(--main-color);
+  border-radius: 10px;
+  margin: 5px auto;
+ 
+}
+
+.btn-style-1:hover{
+  background-color:#ff6a0050;
+  color:white;
 }

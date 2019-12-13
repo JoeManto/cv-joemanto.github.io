@@ -1,10 +1,8 @@
 import React from "react";
-import { Header } from "../blog/blog.js";
 import "../landingStyles.css";
 import HapticPic1 from "./res/HapticFeedBack.png";
 import HapticPic2 from "./res/HapticFeedBack2.png";
-import {JMImage,JMCode} from "../blog/blog";
-import {ContentPlain,ContentText} from "./../components/Components.js";
+import {ContentPlain,ContentText,JMImage,JMCode,Header} from "./../components/components.js";
 
 export class Haptic extends React.Component {
     render() {

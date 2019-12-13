@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BlogPost } from "./blog/blog.js";
 import { Landing } from "./landing.js";
-import { UX } from "./UX/UX.js";
+import { UX } from "./ux/UX.js";
 import { Projects } from "./projects/projects.js";
 import { Sheetie } from "./projects/sheetie.js";
 import { OnePalette } from "./projects/onePalette";
