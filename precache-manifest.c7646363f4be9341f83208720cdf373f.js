@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4b3ae07b922b8de87adde0874506384d",
+    "revision": "974e681e3e0ee80cbf2b8d4afebff55c",
     "url": "/index.html"
   },
   {
-    "revision": "919f03c6e644a4fd52a6",
-    "url": "/static/css/main.74cacf13.chunk.css"
+    "revision": "05d88af21b80d5af0c3e",
+    "url": "/static/css/main.6d54d11a.chunk.css"
   },
   {
-    "revision": "dabd2a1f7aae075b7e06",
-    "url": "/static/js/2.ff4b59a7.chunk.js"
+    "revision": "b8c94561b3816f07129f",
+    "url": "/static/js/2.7d5c8aa8.chunk.js"
   },
   {
-    "revision": "919f03c6e644a4fd52a6",
-    "url": "/static/js/main.b4e04777.chunk.js"
+    "revision": "05d88af21b80d5af0c3e",
+    "url": "/static/js/main.bb113d8d.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -42,10 +42,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ba138882028351232d3862c6765780ed",
     "url": "/static/media/OnePaletteMenuView.ba138882.png"
-  },
-  {
-    "revision": "f5e602f45cffd94726d92c05f939b238",
-    "url": "/static/media/image.f5e602f4.png"
   },
   {
     "revision": "ce269237d799aa0c37b2f51735f76212",
