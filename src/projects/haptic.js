@@ -1,62 +1,23 @@
 import React from "react";
-import "../landingStyles.css";
-import HapticPic1 from "./res/HapticFeedBack.png";
-import HapticPic2 from "./res/HapticFeedBack2.png";
-import {ContentPlain,ContentText,JMImage,JMCode,Header} from "./../components/components.js";
+import hapticLogo1 from './res/haptic1.png';
+import hapticLogo2 from './res/haptic2.png';
+import {HeaderTitle, Image, NavBar, NavChild, PageContainer,PageTextContainer} from '../components/BasicComponents';
 
-export class Haptic extends React.Component {
-    render() {
-        return (
-            <ContentPlain>
-                <div style={{marginBottom:"100px"}}>
-                    <Header name={"Haptic"} subtitle={"Closed Source IOS App developed in 2019"} />
-                </div>
-                <JMImage position = {"center"} width = "75%" height = "auto" src = {HapticPic1} subtitle = {"Copyright Joseph Manto 2019"} alt = {"logo"}/>
-                <ContentText text = {`
-                 Haptic is an IOS keyboard extension that provides 'haptic feedback'. Haptic is in the App Store as 'Haptic Feedback Keyboard'. The keyboard provides a small vibration to the users device via the tapic engine when a key on the keyboard is pressed, simulating a physical keyboard. 
-                 `}/>
-                <JMImage position = {"center"} width = "75%" height = "auto" src = {HapticPic2} subtitle = {"Copyright Joseph Manto 2019"} alt = {"logo"}/>
-            </ContentPlain>
-        );
-    }
-}
+export class Haptic extends React.Component{ render() {
+    return(
+        <PageContainer>
+            <NavBar>
+                <NavChild linkName={"Back"} style={{fontWeight: "bold", fontSize: "1.1em"}} link={"#/"}/>
+            </NavBar>
 
-const codeblock1 = `
-function makeGrid(size){
-
-   var rect;
-   var shapeGroup;
-   var fill;
-   var group = [[NSMutableArray alloc] init];
-
-   for(var i = 1;i*size <= width;i++){
-        rect = MSRectangleShape.alloc().init();
-        rect.frame = MSRect.rectWithRect(NSMakeRect(i*size, 0, 1, height));
-        
-        shapeGroup = MSShapeGroup.shapeWithPath(rect);
-        shapeGroup.style().addStylePartOfType(0)
-        
-        fill = shapeGroup.style().fills().firstObject();
-        fill.color = MSColor.colorWithRed_green_blue_alpha(181/255,9/255,255/255,1.0)
-        
-        [group addObject:shapeGroup];
-   }
-   
-   for(var i = 1;i*size <= height;i++){
-        rect = MSRectangleShape.alloc().init();
-        rect.frame = MSRect.rectWithRect(NSMakeRect(0, i*size, width, 1));
-        
-        shapeGroup = MSShapeGroup.shapeWithPath(rect);
-        shapeGroup.style().addStylePartOfType(0);
-        
-        fill = shapeGroup.style().fills().firstObject();
-        fill.color = MSColor.colorWithRed_green_blue_alpha(181/255,9/255,255/255,1.0)
-        
-        [group addObject:shapeGroup];
-   }
-  var layer = MSLayerGroup.alloc().init();
-  [layer addLayers:group];
-  [layer setIsLocked:true];
-  [layer setName:@"Contents"]
-  artboard.addLayers([layer]);
-};`;
+            <HeaderTitle name={"Sheetie"}/>
+            <p><strong>Closed-Source IOS Keyboard extension</strong></p>
+            <PageTextContainer>
+                <p>Haptic is an IOS keyboard extension that provides 'haptic feedback'. Haptic is in the App Store as 'Haptic Feedback Keyboard'. The keyboard provides a small vibration to the users device via the tapic engine when a key on the keyboard is pressed, simulating a physical keyboard.</p>
+                <p style={{color:"#C8AEFF"}}>Notice: The app as been temporary removed from sale as IOS 13 has introduced changes to the their Haptic Api. I am working on the update!</p>
+            </PageTextContainer>
+            <Image imgSrc = {hapticLogo1}/>
+            <Image imgSrc = {hapticLogo2}/>
+        </PageContainer>
+    );
+}}

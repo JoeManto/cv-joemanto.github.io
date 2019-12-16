@@ -1,54 +1,62 @@
 import React from "react";
-import "../landingStyles.css";
-import "../styles.css";
-import OnePaletteLogo from "./res/OnePaletteLogo.png";
-import OnePaletteColorExport from "./res/OnePaletteColorExport.png";
-import OnePaletteMenuView from "./res/OnePaletteMenuView.png"
-import OnePaletteEditView from "./res/OnePaletteEditColors.png"
-
-import {GithubLogoLink} from "./projects";
-import {ContentPlain,ContentText,JMImage,JMCode,Header} from "./../components/components.js";
+import {Image,PageContainer,HeaderTitle} from "../components/BasicComponents.js"
+import onepal1 from './res/onepal1.png';
+import onepal2 from './res/onepal2.png';
+import onepal3 from './res/onepal3.png';
+import onepal4 from './res/onepal4.png';
+import {NavBar, NavChild, PageTextContainer,Code,LinkWithImage,SubHeaderTitle} from "../components/BasicComponents";
+import githubLogo from "../res/githublogo.png";
 
 export class OnePalette extends React.Component {
     render() {
         return (
-            <ContentPlain>
-                <div style={{marginBottom:"100px"}}>
-                    <Header name={"One Palette"} subtitle={"Open-Source Project started in 2018"} />
-                    <GithubLogoLink link = {"https://www.github.com/JoeManto/onepalette"} target = {"_blank"} text = {"View Repo"}/>
+            <PageContainer>
+                <NavBar>
+                    <NavChild linkName={"Back"} style={{fontWeight: "bold", fontSize: "1.1em"}} link={"#/"}/>
+                </NavBar>
+
+                <HeaderTitle name={"One Palette"}/>
+                <p>Open-Source project developed started in 2018</p>
+                <LinkWithImage imgSrc={githubLogo} name={"checkout the repo"} link={"https://github.com/JoeManto/OnePalette"}/>
+
+                <div style={{display:"flex",justifyContent:"center",margin:"60px 60px"}}>
+                 <Image imgSrc = {onepal1} style = {{height:"300px"}}/>
                 </div>
 
-                <div style={{width:"500px",height:"500px",position:"relative",margin:"0 auto"}}>
-                <JMImage position = {"center"} width = "300px" height = "auto" src = {OnePaletteLogo}  alt = {"logo"} ani={"bounceImage"}/>
+                <PageTextContainer>
+                    <p>OnePalette is a modern material design color palette that allows for quick and intuitive color lookups. OnePalette was designed and implemented for frontend devs and UX designs in mind, Letting developers stay on track and keep creating.</p>
+                </PageTextContainer>
+
+                <div style={{display:"flex",justifyContent:"center",margin:"60px 60px"} }>
+                    <Image imgSrc = {onepal2}/>
                 </div>
-                <ContentText text = {`
-                 OnePalette is a modern material design color palette that allows for quick and intuitive color lookups. OnePalette was designed and implemented for frontend devs and UX designs in mind, Letting developers stay on track and keep creating.
-                 `}/>
+                <SubHeaderTitle name={"Unlimited Compatibility"}/>
+                <PageTextContainer>
+                    <p>Copy colors for any language. Simply pick your color copy format from the dozens of options or make your own! Once a color copy format is selected all you need to do is click the color you wish to copy! Oneplatte uses core data to remember fields like these, so your selected copy format will only have to be set once.</p>
+                </PageTextContainer>
 
-                <JMImage position = {"center"} width = "80%" height = "auto" src = {OnePaletteColorExport}  alt = {"logo"}/>
+                <div style={{display:"flex",justifyContent:"center",margin:"60px 60px"} }>
+                    <Image imgSrc = {onepal3}/>
+                </div>
+                <SubHeaderTitle name={"Integrated Work Flow"}/>
+                <PageTextContainer>
+                    <p>OnePalette is a swift MacOS hidden menu application. One Palette is just one click away from you at all times, Which allows OnePalette to be used all through your workflow.</p>
+                </PageTextContainer>
+                <div style={{display:"flex",justifyContent:"center",margin:"60px 60px"} }>
+                    <Image imgSrc = {onepal4}/>
+                </div>
+                <SubHeaderTitle name={"Changeable"}/>
+                <PageTextContainer>
+                    <p>Don't care about material design?Need a palette just for a project? Need to remove/change colors? Take control of your palette. OnePalette allows users to take complete control over their palettes.</p>
+                </PageTextContainer>
 
-                <ContentText text = {`
-                 Copy colors for any language. Simply pick your color copy format from the dozens of options or make your own! Once a color copy format is selected all you need to do is click the color you wish to copy! Oneplatte uses core data to remember fields like these, so your selected copy format will only have to be set once.                  `}/>
-                <JMImage position = {"center"} width = "50%" height = "auto" src = {OnePaletteMenuView}  alt = {"logo"}/>
-
-                <ContentText text = {`
-                OnePalette is a swift MacOS hidden menu application. One Palette is just one click away from you at all times, Which allows OnePalette to be used all through your workflow.
-                 `}/>
-
-                <JMImage position = {"center"} width = "50%" height = "auto" src = {OnePaletteEditView}  alt = {"logo"}/>
-                <ContentText text = {`Don't care about material design?Need a palette just for a project?Need to remove/change colors?Take control of your palette. OnePalette allows users to take complete control over their palettes.`}/>
-
-                <JMCode
-                    position = {"center"}
-                    code={codeblock1}
-                    language={"swift"}
-                />
-            </ContentPlain>
-        );
+                <Code code={codeBlock}/>
+            </PageContainer>
+        )
     }
 }
 
-const codeblock1 = `
+const codeBlock = `
 //
 //  Palette.swift
 //  OnePalette
@@ -205,4 +213,5 @@ class Palette: NSManagedObject {
         }
         return false
     }
-}`;
+}
+`;

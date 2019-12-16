@@ -1,38 +1,50 @@
 import React from "react";
-import "../landingStyles.css";
-import sheetieLogoSrc from "./res/sheetie_logo.png";
-import {GithubLogoLink} from "./projects";
-import {ContentPlain,ContentText,JMCode,JMImage,Header} from "./../components/components.js";
+import {Image,PageContainer,HeaderTitle} from "../components/BasicComponents.js"
+import sheetielogo1 from './res/sheetielog1.png';
+import sheetielogo2 from './res/sheetielog2.png';
+import githubLogo from '../res/githublogo.png';
+import {NavBar, NavChild, PageTextContainer,Code,LinkWithImage} from "../components/BasicComponents";
 
-export class Sheetie extends React.Component {
-  render() {
+export class Sheetie extends React.Component { render() {
     return (
-      <ContentPlain>
-        <div style={{marginBottom:"100px"}}>
-            <Header name={"Sheetie"} subtitle={"Open-Source Project developed in 2016"} />
-            <GithubLogoLink link = {"https://www.github.com/JoeManto/sheetie"} target = {"_blank"} text = {"View Repo"}/>
-        </div>
-        <JMImage position = {"center"} width = "300px" height = "auto" src = {sheetieLogoSrc} subtitle = {"Copyright Joseph Manto 2019"} alt = {"logo"}/>
-          <ContentText text = {`
-          Sheetie is a sketch 3 plugin developed for indie game developers in mind. Sheetie creates vectorized sprite sheet objects that are automatically placed and rendered into a sketch art-board.
-          For information on installing the plugin please visit the github.
-        `}/>
-        <ContentText text = {`
-          Sheetie is written in a sketch wrapper language on obj-c called cocoa-script. Which gives you access to the underlining Obj-c api and access the the sketch development api.
-          Below you can see some obj-c based code that uses both the obj-c api and the sketch dev api. Although, this code block below looks a lot like objective-c you can tell it not because of the
-          interesting observation of dynamic data types 🤙🏼 This function creates all the grid lines for the sprite sheet.
-        `}/>
-        <JMCode
-            position = {"center"}
-            code={codeblock1}
-            language={"javascript"}
-        />
-      </ContentPlain>
-    );
-  }
+        <PageContainer>
+            <NavBar>
+                <NavChild linkName={"Back"} style={{fontWeight: "bold", fontSize: "1.1em"}} link={"#/"}/>
+            </NavBar>
+
+            <HeaderTitle name={"Sheetie"}/>
+            <p>Open-Source project developed in 2016</p>
+            <LinkWithImage imgSrc={githubLogo} name={"checkout the repo"} link={"https://github.com/JoeManto/Sprite"}/>
+            <PageTextContainer style={{marginBottom: "100px"}}>
+                <Image imgSrc={sheetielogo2} name={"sheetielogo2"} style={{height: "300px"}}/>
+                <Image imgSrc={sheetielogo1} name={"sheetielogo1"} style={{height: "250px"}}/>
+            </PageTextContainer>
+            <PageTextContainer>
+                Sheetie is a sketch 3 plugin developed for indie game developers in mind. Sheetie creates vectorized
+                sprite sheet objects that are automatically placed and rendered into a sketch art-board. For information
+                on installing the plugin please visit the github repo.
+            </PageTextContainer>
+            <PageTextContainer>
+                Sheetie was developed in cocoa-script which is a javascript based language that complies to native
+                Objective-C. This was back in the early days of swift and Sketch. It was pretty interesting and fun to
+                write obj-c code with dynamic types and all that fun stuff that javascript provides 🚀
+            </PageTextContainer>
+            <PageTextContainer>
+                cocoa-script is very odd, because the language is pre-compiled like you would expect, but this allows
+                you can do weird mixes of Obj-C and JavaScript at the same time. See the code snippet below that renders
+                the sprite sheet to the artboard given a frame size.
+            </PageTextContainer>
+
+            <Code code={codeBlock}/>
+
+        </PageContainer>
+    )
+}
 }
 
-const codeblock1 = `
+
+
+const codeBlock = `
 function makeGrid(size){
 
    var rect;
@@ -70,4 +82,5 @@ function makeGrid(size){
   [layer setIsLocked:true];
   [layer setName:@"Contents"]
   artboard.addLayers([layer]);
-};`;
+};
+`
