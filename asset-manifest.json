@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.8cea39b8.chunk.css",
+    "main.css": "/static/css/main.0f0f386e.chunk.css",
     "main.js": "/static/js/main.9e5ec857.chunk.js",
     "main.js.map": "/static/js/main.9e5ec857.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2d01495a.js",
@@ -9,10 +9,10 @@
     "static/js/2.88a70a1a.chunk.js": "/static/js/2.88a70a1a.chunk.js",
     "static/js/2.88a70a1a.chunk.js.map": "/static/js/2.88a70a1a.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.9b686f77f1fbcae20643c8141701e7e3.js": "/precache-manifest.9b686f77f1fbcae20643c8141701e7e3.js",
+    "precache-manifest.3837e2f7b34bce6051509875c7f4a774.js": "/precache-manifest.3837e2f7b34bce6051509875c7f4a774.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.07b4c11c.chunk.css.map": "/static/css/2.07b4c11c.chunk.css.map",
-    "static/css/main.8cea39b8.chunk.css.map": "/static/css/main.8cea39b8.chunk.css.map",
+    "static/css/main.0f0f386e.chunk.css.map": "/static/css/main.0f0f386e.chunk.css.map",
     "static/js/2.88a70a1a.chunk.js.LICENSE": "/static/js/2.88a70a1a.chunk.js.LICENSE",
     "static/media/haptic1.png": "/static/media/haptic1.11130a19.png",
     "static/media/haptic2.png": "/static/media/haptic2.b40d6b5c.png",
@@ -27,7 +27,7 @@
     "static/js/runtime-main.2d01495a.js",
     "static/css/2.07b4c11c.chunk.css",
     "static/js/2.88a70a1a.chunk.js",
-    "static/css/main.8cea39b8.chunk.css",
+    "static/css/main.0f0f386e.chunk.css",
     "static/js/main.9e5ec857.chunk.js"
   ]
 }
