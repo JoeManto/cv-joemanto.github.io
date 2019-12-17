@@ -6,13 +6,11 @@ import githubLogo from './res/githublogo.png';
 import mailLogo from './res/mailLogo.png';
 import {PageContainer,PageTextContainer,HeaderTitle,NavBar,NavChild,Button,Project,ProjectsContainer,LinkWithImage} from './components/BasicComponents.js';
 
-
 function App() {
   return (
       <PageContainer>
         <NavBar>
           <NavChild linkName={"Joe Manto"} style={{fontWeight:"bold",fontSize:"1.1em"}} link={"#/"}/>
-
         </NavBar>
         <HeaderTitle name = {"About Me"}/>
         <PageTextContainer>
@@ -26,7 +24,7 @@ function App() {
         <HeaderTitle name = {"Projects"}/>
         <ProjectsContainer>
           <Project name = {"One Palette"} link = {"#/projects/onepalette"}>
-            <p>OnePalette is a modern material design color palette that allows for quick and intuitive color lookups. OnePalette was designed and implemented for frontend devs and UX designers in mind, allowing developers and designers to stay on track and keep creating.</p>
+            <p>OnePalette is a modern material design color palette that allows for quick and intuitive color lookups. OnePalette was designed and implemented for frontend devs and UX designers in mind, allowing developers and designers to stay on track and keep creating 🤙🏼</p>
           </Project>
           <Project name = {"Haptic"} link = {"#/projects/haptic"}>
             <p>Haptic is an IOS keyboard extension that provides 'haptic feedback'. Haptic is in the App Store as 'Haptic Feedback Keyboard'. The keyboard provides a small vibration to the users device via the tapic engine when a key on the keyboard is pressed, simulating a physical keyboard.</p>
@@ -47,7 +45,6 @@ function App() {
         </PageTextContainer>
 
       </PageContainer>
-
   );
 }
 

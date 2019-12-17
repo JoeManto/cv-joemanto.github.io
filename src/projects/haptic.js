@@ -10,7 +10,7 @@ export class Haptic extends React.Component{ render() {
                 <NavChild linkName={"Back"} style={{fontWeight: "bold", fontSize: "1.1em"}} link={"#/"}/>
             </NavBar>
 
-            <HeaderTitle name={"Sheetie"}/>
+            <HeaderTitle name={"Haptic"}/>
             <p><strong>Closed-Source IOS Keyboard extension</strong></p>
             <PageTextContainer>
                 <p>Haptic is an IOS keyboard extension that provides 'haptic feedback'. Haptic is in the App Store as 'Haptic Feedback Keyboard'. The keyboard provides a small vibration to the users device via the tapic engine when a key on the keyboard is pressed, simulating a physical keyboard.</p>

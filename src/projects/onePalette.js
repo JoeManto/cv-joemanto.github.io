@@ -24,7 +24,7 @@ export class OnePalette extends React.Component {
                 </div>
 
                 <PageTextContainer>
-                    <p>OnePalette is a modern material design color palette that allows for quick and intuitive color lookups. OnePalette was designed and implemented for frontend devs and UX designs in mind, Letting developers stay on track and keep creating.</p>
+                    <p>OnePalette is a modern material design color palette that allows for quick and intuitive color lookups. OnePalette was designed and implemented for frontend devs and UX designers in mind, allowing developers and designers to stay on track and keep creating.</p>
                 </PageTextContainer>
 
                 <div style={{display:"flex",justifyContent:"center",margin:"60px 60px"} }>
