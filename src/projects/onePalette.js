@@ -47,7 +47,7 @@ export class OnePalette extends React.Component {
                 </div>
                 <SubHeaderTitle name={"Changeable"}/>
                 <PageTextContainer>
-                    <p>Don't care about material design?Need a palette just for a project? Need to remove/change colors? Take control of your palette. OnePalette allows users to take complete control over their palettes.</p>
+                    <p>Don't care about material design? Need a palette just for a project? Need to remove/change colors? Take control of your palette. OnePalette allows users to take complete control over their palettes.</p>
                 </PageTextContainer>
 
                 <Code code={codeBlock}/>
