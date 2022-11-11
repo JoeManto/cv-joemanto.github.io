@@ -13,36 +13,34 @@ export class Sheetie extends React.Component { render() {
             </NavBar>
 
             <HeaderTitle name={"Sheetie"}/>
-            <p>Open-Source project developed in 2016</p>
+            <p>Open Source Project</p>
             <LinkWithImage imgSrc={githubLogo} name={"checkout the repo"} link={"https://github.com/JoeManto/Sprite"}/>
             <PageTextContainer style={{marginBottom: "100px"}}>
                 <Image imgSrc={sheetielogo2} name={"sheetielogo2"} style={{height: "300px"}}/>
                 <Image imgSrc={sheetielogo1} name={"sheetielogo1"} style={{height: "250px"}}/>
             </PageTextContainer>
             <PageTextContainer>
-                Sheetie is a sketch 3 plugin developed for indie game developers in mind. Sheetie creates vectorized
-                sprite sheet objects that are automatically placed and rendered into a sketch art-board. For information
+                Sheetie is a sketch 3 plugin developed for indie game developers in mind.
+                Sheetie creates vectorized sprite sheet objects that are automatically placed
+                and rendered into a sketch art-board. For information
                 on installing the plugin please visit the github repo.
             </PageTextContainer>
             <PageTextContainer>
-                Sheetie was developed in cocoa-script which is a javascript based language that complies to native
-                Objective-C. This was back in the early days of swift and Sketch. It was pretty interesting and fun to
-                write obj-c code with dynamic types and all that fun stuff that javascript provides 🚀
+                Sheetie was developed in cocoa-script which is a javascript based language that
+                complies to native Objective-C. This was back in the early days of swift and Sketch.
+                It was pretty interesting and fun to write obj-c code with dynamic types and all that
+                fun stuff that javascript provides 🚀
             </PageTextContainer>
             <PageTextContainer>
-                cocoa-script is very odd, because the language is pre-compiled like you would expect, but this allows
-                you can do weird mixes of Obj-C and JavaScript at the same time. See the code snippet below that renders
-                the sprite sheet to the artboard given a frame size.
+                cocoa-script is very odd, because the language is pre-compiled like you would expect,
+                but this allows you can do weird mixes of Obj-C and JavaScript at the same time.
+                See the code snippet below that renders the sprite sheet to the artboard given
+                a frame size.
             </PageTextContainer>
-
             <Code code={codeBlock}/>
-
         </PageContainer>
     )
-}
-}
-
-
+}}
 
 const codeBlock = `
 function makeGrid(size){
