@@ -24,12 +24,6 @@ function App() {
 
         <HeaderTitle name = {"Projects"}/>
         <ProjectsContainer>
-          <Project name = {"One Palette"} link = {"#/projects/onepalette"}>
-            <p>OnePalette is a modern material design color palette that
-              allows for quick and intuitive color lookups. OnePalette was designed and
-              implemented for frontend devs and UX designers in mind, allowing developers
-              and designers to stay on track and keep creating 🤙🏼</p>
-          </Project>
           <Project name = {"Haptic"} link = {"#/projects/haptic"}>
             <p>Haptic is a previously closed source App released on the app store that offered
               an iOS keyboard extension that gave the user access to a haptic feedback
@@ -39,8 +33,14 @@ function App() {
           </Project>
           <Project name = {"XCT"} link = {"#/projects/xct"}>
             <p>A preprocessing CLI wrapper on Apple's xcodebuild test runner.
-               XCT's goal is to make running tests via a CLI more accessible and practical
+               XCT's goal is to make running tests git aia a CLI more accessible and practical
               </p>
+          </Project>
+          <Project name = {"One Palette"} link = {"#/projects/onepalette"}>
+            <p>OnePalette is a modern material design color palette that
+              allows for quick and intuitive color lookups. OnePalette was designed and
+              implemented for frontend devs and UX designers in mind, allowing developers
+              and designers to stay on track and keep creating 🤙🏼</p>
           </Project>
           <Project name = {"Sheetie"} link = {"#/projects/sheetie"}>
             <p>Sheetie is a sketch 3 plugin developed for indie game developers
