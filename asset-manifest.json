@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.058b54f0.chunk.css",
-    "main.js": "/static/js/main.dccdcf9e.chunk.js",
-    "main.js.map": "/static/js/main.dccdcf9e.chunk.js.map",
+    "main.css": "/static/css/main.eddd1540.chunk.css",
+    "main.js": "/static/js/main.5066f02c.chunk.js",
+    "main.js.map": "/static/js/main.5066f02c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2d01495a.js",
     "runtime-main.js.map": "/static/js/runtime-main.2d01495a.js.map",
     "static/css/2.07b4c11c.chunk.css": "/static/css/2.07b4c11c.chunk.css",
-    "static/js/2.fd8b3f0d.chunk.js": "/static/js/2.fd8b3f0d.chunk.js",
-    "static/js/2.fd8b3f0d.chunk.js.map": "/static/js/2.fd8b3f0d.chunk.js.map",
+    "static/js/2.e742d796.chunk.js": "/static/js/2.e742d796.chunk.js",
+    "static/js/2.e742d796.chunk.js.map": "/static/js/2.e742d796.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.17197c5cb5189c97f38d5cd096f428f5.js": "/precache-manifest.17197c5cb5189c97f38d5cd096f428f5.js",
+    "precache-manifest.6af757f833787684c584eb39c79208d7.js": "/precache-manifest.6af757f833787684c584eb39c79208d7.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.07b4c11c.chunk.css.map": "/static/css/2.07b4c11c.chunk.css.map",
-    "static/css/main.058b54f0.chunk.css.map": "/static/css/main.058b54f0.chunk.css.map",
-    "static/js/2.fd8b3f0d.chunk.js.LICENSE": "/static/js/2.fd8b3f0d.chunk.js.LICENSE",
+    "static/css/main.eddd1540.chunk.css.map": "/static/css/main.eddd1540.chunk.css.map",
+    "static/js/2.e742d796.chunk.js.LICENSE": "/static/js/2.e742d796.chunk.js.LICENSE",
     "static/media/haptic1.png": "/static/media/haptic1.11130a19.png",
     "static/media/haptic2.png": "/static/media/haptic2.b40d6b5c.png",
     "static/media/onepal1.png": "/static/media/onepal1.511c6104.png",
@@ -21,13 +21,16 @@
     "static/media/onepal3.png": "/static/media/onepal3.dba394b4.png",
     "static/media/onepal4.png": "/static/media/onepal4.ba138882.png",
     "static/media/sheetielog1.png": "/static/media/sheetielog1.5b4f7f92.png",
-    "static/media/sheetielog2.png": "/static/media/sheetielog2.19082a6f.png"
+    "static/media/sheetielog2.png": "/static/media/sheetielog2.19082a6f.png",
+    "static/media/twitterlog.png": "/static/media/twitterlog.63101dc7.png",
+    "static/media/vmw.png": "/static/media/vmw.9102e4f3.png",
+    "static/media/wmu.png": "/static/media/wmu.6ca631a7.png"
   },
   "entrypoints": [
     "static/js/runtime-main.2d01495a.js",
     "static/css/2.07b4c11c.chunk.css",
-    "static/js/2.fd8b3f0d.chunk.js",
-    "static/css/main.058b54f0.chunk.css",
-    "static/js/main.dccdcf9e.chunk.js"
+    "static/js/2.e742d796.chunk.js",
+    "static/css/main.eddd1540.chunk.css",
+    "static/js/main.5066f02c.chunk.js"
   ]
 }
