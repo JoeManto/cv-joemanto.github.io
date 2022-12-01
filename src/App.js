@@ -32,7 +32,7 @@ function App() {
               <h5>Member of Technical Staff 2</h5>
           </HStack>
           <Centered style = {{marginBottom: "20px", position: "relative"}}>
-            <p style={{position: "absolute", top: "50%", left: "-30px", backgroundColor: "black", padding: "10px"}}>2017</p>
+            <p style={{position: "absolute", top: "50%", left: "-30px", backgroundColor: "black", padding: "10px"}}>2020</p>
             <HStack basis = {"30%"} style = {{borderLeft: "1px #a08bccFF solid", paddingLeft: "30px"}}>
               <BulletPoint>Provided code and design contributions for customer-facing NIAP-compliant (security standard) apps.</BulletPoint>
               <BulletPoint>Led the design and development of in-app analytics efforts in two core apps. Allowing app stakeholders to make informed data-driven decisions</BulletPoint>
@@ -42,7 +42,6 @@ function App() {
               <BulletPoint>Experience working on apps that utilize a central SDK</BulletPoint>
               <BulletPoint>Experience working with apps that use Swift and Obj-C as well as UIKit and SwiftUI</BulletPoint>
               <BulletPoint>Worked on apps that have native versions on multiple platforms (iOS & macOS & Android)</BulletPoint>
-              <BulletPoint>Experience working on apps that utilize a central SDK</BulletPoint>
               <BulletPoint>Worked on multiple distributed code bases</BulletPoint>
               <BulletPoint>Experience working with CocoaPods and Swift Package Manager</BulletPoint>
             </HStack>
@@ -55,6 +54,7 @@ function App() {
             <h5>Student Lead & Web Dev</h5>
           </HStack>
           <Centered style = {{borderLeft: "", position: "relative"}}>
+          <p style={{position: "absolute", top: "50%", left: "-30px", backgroundColor: "black", padding: "10px"}}>2016</p>
             <HStack basis = {"30%"} style = {{borderLeft: "1px #a08bccFF solid", paddingLeft: "30px"}}>
               <BulletPoint>Worked in a team environment leading and helping staff solve problems.</BulletPoint>
               <BulletPoint>Developed management skills with a focus on problem-solving.</BulletPoint>
