@@ -133,6 +133,37 @@ export class Button extends React.Component{
 
 Button = Radium(Button);
 
+export function ProjectLabel(props) {
+    const labelStyle = {
+        marginTop: 0,
+        marginBottom: "5px",
+        marginRight: "5px",
+        padding: "0px 5px",
+        border: "1px #a08bcc solid",
+        borderRadius: "5px"
+    }
+
+    return (
+        <div>
+            <p style = {labelStyle}>{props.name}</p>
+        </div>
+    )
+}
+
+export function RoundedImg(props) {
+    const imageStyle = {
+        borderRadius: "50%",
+        width: props.size,
+        height: props.size
+    }
+
+    return (
+        <div>
+            <img src = {props.src} style = {imageStyle}></img>
+        </div> 
+    )
+}
+
 export function Project(props) {
     const projectCntStyle = {
         position:"relative",
@@ -144,8 +175,9 @@ export function Project(props) {
     };
 
     const titleStyle = {
-        marginTop:0,
+        marginTop: 0,
         marginBottom: "5px",
+        marginRight: "15px",
     };
 
     const moreInfoLinkStyle = {
@@ -157,9 +189,21 @@ export function Project(props) {
         float:"right",
     };
 
+    const labelsCntStyle = {
+        display: "flex",
+        flexDirection: "row",
+    }
+
     return(
         <div style={projectCntStyle}>
-            <h2 style={titleStyle}>{props.name}</h2>
+            <div style={labelsCntStyle}>
+                <h2 style={titleStyle}>{props.name}</h2>
+                {
+                    props.labels.map((labelName) => (
+                        <ProjectLabel name = {labelName}/>   
+                    ))
+                }
+            </div>
             <br/>
             {props.children}
             <a style={moreInfoLinkStyle} href={props.link}>Check It Out</a>
@@ -167,7 +211,7 @@ export function Project(props) {
     )
 }
 
-export function ProjectsContainer(props){
+export function SubPageContainer(props){
     const style = {
         display:"flex",
         flexDirection: "column",
@@ -186,25 +230,61 @@ export function LinkWithImage({imgSrc,name,link}) {
         flexDirection:"row",
     };
     const imgStyle = {
-        maxHeight:"25px",
+        height: "20px",
     };
     return(
-        <div style={cntStyle}>
+        <HStack>
             <div style={{width:"30px",marginRight:"15px"}}>
              <img src={imgSrc} style={imgStyle} alt={name}/>
             </div>
             <a href={link} target={"_blank"}>{name}</a>
+        </HStack>
+    )
+}
+
+export function HStack(props) {
+    const style = {
+        display:"flex",
+        flexDirection:"row",
+        flexBasis: props.basis,
+        flexWrap: props.noWrap ? "no-wrap" : "wrap",
+        ...props.style
+    };
+
+    return(
+        <div style={style}>
+            {props.children}
         </div>
+    )
+}
+
+export function BulletPoint(props) {
+    const bulletStyle = {
+        minWidth: "8px",
+        maxWidth: "8px",
+        minHeight: "8px",
+        maxHeight: "8px",
+        backgroundColor: "#a08bcc",
+        borderRadius: "50%",
+        margin: "5px"
+    };
+
+    return (
+        <HStack style = {{marginBottom: "10px"}} noWrap = {true} basis = {"50%"}>
+            <div style={bulletStyle}/>
+            {props.children}
+        </HStack>
     )
 }
 
 export function Centered(props) {
     const style = {
         margin: "0 auto",
-        display:"inline-block"
+        display:"inline-block",
+        ...props.style
     };
     Object.assign(style,props.style);
-    return <div style={{margin:"0 auto"}}>{props.children}</div>
+    return <div style={style}>{props.children}</div>
 }
 
 export function Image(props) {
