@@ -2,6 +2,7 @@ import React from "react";
 import hapticLogo1 from './res/haptic1.png';
 import hapticLogo2 from './res/haptic2.png';
 import githubLogo from '../res/githublogo.png';
+import banner from '../res/haptic-banner.png';
 import {HeaderTitle, Image, NavBar, NavChild, PageContainer,PageTextContainer, LinkWithImage} from '../components/BasicComponents';
 
 export class Haptic extends React.Component{ render() {
@@ -23,6 +24,7 @@ export class Haptic extends React.Component{ render() {
                 <p style={{color:"#C8AEFF"}}>Notice: Removed from sale as iOS 13 has introduced changes
                  to the haptic Api that removed the ability to request haptics within a keyboard extension</p>
             </PageTextContainer>
+            <Image imgSrc = {banner}/>
             <Image imgSrc = {hapticLogo1}/>
             <Image imgSrc = {hapticLogo2}/>
         </PageContainer>
