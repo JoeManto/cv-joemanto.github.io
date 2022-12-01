@@ -1,31 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "db380b18f070c93204bcd25262f040e3",
+    "revision": "6130c27459574b64a4545249708e9704",
     "url": "/index.html"
   },
   {
-    "revision": "d3841f3589a7ce33c3c4",
+    "revision": "da8f13834b02bdddb6d1",
     "url": "/static/css/2.07b4c11c.chunk.css"
   },
   {
-    "revision": "ec6c8e740c779e72173d",
-    "url": "/static/css/main.eddd1540.chunk.css"
+    "revision": "9798275448079babc9e6",
+    "url": "/static/css/main.058b54f0.chunk.css"
   },
   {
-    "revision": "d3841f3589a7ce33c3c4",
-    "url": "/static/js/2.e742d796.chunk.js"
+    "revision": "da8f13834b02bdddb6d1",
+    "url": "/static/js/2.4f9457f6.chunk.js"
   },
   {
     "revision": "3159dcd1f0681bdd4921a3bb6680c3d5",
-    "url": "/static/js/2.e742d796.chunk.js.LICENSE"
+    "url": "/static/js/2.4f9457f6.chunk.js.LICENSE"
   },
   {
-    "revision": "ec6c8e740c779e72173d",
-    "url": "/static/js/main.5066f02c.chunk.js"
+    "revision": "9798275448079babc9e6",
+    "url": "/static/js/main.fb1beb6b.chunk.js"
   },
   {
     "revision": "165d041ca0119268afcc",
     "url": "/static/js/runtime-main.2d01495a.js"
+  },
+  {
+    "revision": "33674909508baa5b01ca0396def466d1",
+    "url": "/static/media/haptic-icon.33674909.png"
   },
   {
     "revision": "11130a19450239c62e7652d4e7cbe426",
@@ -34,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b40d6b5c1b680335c67934f481ed7f2e",
     "url": "/static/media/haptic2.b40d6b5c.png"
+  },
+  {
+    "revision": "410b6e0ccbaa46569fcb72607eac92c4",
+    "url": "/static/media/onepal-icon.410b6e0c.png"
   },
   {
     "revision": "511c61045d36251a9eb4b7d90a03857e",
