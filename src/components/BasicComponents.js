@@ -150,9 +150,22 @@ export function ProjectLabel(props) {
     )
 }
 
+export function Spacer(props) {
+    const style = {
+        margin: "auto",
+        ...props.style
+    };
+
+    return(
+        <div style={style}>
+            {props.children}
+        </div>
+    )
+}
+
 export function RoundedImg(props) {
     const imageStyle = {
-        borderRadius: "50%",
+        borderRadius: props.notRounded ? "0%" : "50%",
         width: props.size,
         height: props.size
     }
@@ -197,6 +210,11 @@ export function Project(props) {
     return(
         <div style={projectCntStyle}>
             <div style={labelsCntStyle}>
+                { props.image &&
+                    <div style={{marginRight: "10px"}}>
+                    {props.image}
+                    </div>
+                }
                 <h2 style={titleStyle}>{props.name}</h2>
                 {
                     props.labels.map((labelName) => (
@@ -301,7 +319,6 @@ export function Image(props) {
 export function Code(props) {
     return(
         <div>
-
             <Highlight className = {"code"} language = {"JavaScript"}>
                 {props.code}
             </Highlight>

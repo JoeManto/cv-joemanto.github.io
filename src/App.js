@@ -5,8 +5,10 @@ import twitterLogo from './res/twitterlog.png';
 import githubLogo from './res/githublogo.png';
 import mailLogo from './res/mailLogo.png';
 import vmwLogo from './res/vmw.png';
-import wmLogo from "./res/wmu.png"
-import {PageContainer,PageTextContainer,HeaderTitle,NavBar,NavChild,Button,Project,SubPageContainer,LinkWithImage,RoundedImg,HStack,Centered,BulletPoint} from './components/BasicComponents.js';
+import wmLogo from "./res/wmu.png";
+import hapticLogo from "./res/haptic-icon.png";
+import onePalLogo from "./res/onepal-icon.png";
+import {PageContainer,PageTextContainer,Spacer,HeaderTitle,NavBar,NavChild,Button,Project,SubPageContainer,LinkWithImage,RoundedImg,HStack,Centered,BulletPoint,ProjectLabel} from './components/BasicComponents.js';
 
 function App() {
   return (
@@ -23,6 +25,7 @@ function App() {
           <LinkWithImage imgSrc={githubLogo} name={"joemanto"} link={"https://www.github.com/joemanto"}/>
           <LinkWithImage imgSrc={mailLogo} name={"joemanto.dev+jobs@gmail.com"} link={"#"}/>
         </PageTextContainer>
+
         <HeaderTitle name = {"Experience"}/>
         <SubPageContainer>
           <HStack style = {{marginBottom: "10px"}}>
@@ -32,7 +35,7 @@ function App() {
               <h5>Member of Technical Staff 2</h5>
           </HStack>
           <Centered style = {{marginBottom: "20px", position: "relative"}}>
-            <p style={{position: "absolute", top: "50%", left: "-30px", backgroundColor: "black", padding: "10px"}}>2020</p>
+            <p style={{position: "absolute", top: "40%", left: "-30px", backgroundColor: "black", padding: "10px"}}>2020</p>
             <HStack basis = {"30%"} style = {{borderLeft: "1px #a08bccFF solid", paddingLeft: "30px"}}>
               <BulletPoint>Provided code and design contributions for customer-facing NIAP-compliant (security standard) apps.</BulletPoint>
               <BulletPoint>Led the design and development of in-app analytics efforts in two core apps. Allowing app stakeholders to make informed data-driven decisions</BulletPoint>
@@ -54,7 +57,7 @@ function App() {
             <h5>Student Lead & Web Dev</h5>
           </HStack>
           <Centered style = {{borderLeft: "", position: "relative"}}>
-          <p style={{position: "absolute", top: "50%", left: "-30px", backgroundColor: "black", padding: "10px"}}>2016</p>
+            <p style={{position: "absolute", top: "30%", left: "-30px", backgroundColor: "black", padding: "10px"}}>2016</p>
             <HStack basis = {"30%"} style = {{borderLeft: "1px #a08bccFF solid", paddingLeft: "30px"}}>
               <BulletPoint>Worked in a team environment leading and helping staff solve problems.</BulletPoint>
               <BulletPoint>Developed management skills with a focus on problem-solving.</BulletPoint>
@@ -64,10 +67,50 @@ function App() {
             </HStack>
           </Centered>
         </SubPageContainer>
-        <HeaderTitle name = {"Projects"}/>
 
+        <HeaderTitle name = {"Skills"}/>
         <SubPageContainer>
-          <Project name = {"Haptic"} link = {"#/projects/haptic"} labels = {["iOS", "Swift", "UIKit"]}>
+          <HStack style = {{marginBottom: "10px"}}>
+            <ProjectLabel name = "iOS"/>
+            <ProjectLabel name = "macOS"/>
+            <ProjectLabel name = "Swift"/>
+            <ProjectLabel name = "Xcode"/>
+            <ProjectLabel name = "SwiftUI"/>
+            <ProjectLabel name = "UIKit"/>
+            <ProjectLabel name = "XCTest"/>
+            <ProjectLabel name = "Combine"/>
+            <ProjectLabel name = "WidgetKit"/>
+            <ProjectLabel name = "MVVM"/>
+            <ProjectLabel name = "Dependency Injection"/>
+            <ProjectLabel name = "GCD"/>
+            <ProjectLabel name = "Async / Await"/>
+            <ProjectLabel name = "AppKit"/>
+            <ProjectLabel name = "CoreData"/>
+            <ProjectLabel name = "KeyChain"/>
+            <ProjectLabel name = "UserDefaults"/>
+            <ProjectLabel name = "StoreKit"/>
+            <ProjectLabel name = "SpriteKit"/>
+            <ProjectLabel name = "SnapshotTesting"/>
+            <ProjectLabel name = "Accessibility Inspector"/>
+            <ProjectLabel name = "Obj-C"/>
+            <ProjectLabel name = "Git"/>
+            <ProjectLabel name = "Docker"/>
+            <ProjectLabel name = "Xcode"/>
+            <ProjectLabel name = "Jira"/>
+            <ProjectLabel name = "BitBucket"/>
+            <ProjectLabel name = "Bamboo"/>
+          </HStack>
+        </SubPageContainer>
+
+        <HeaderTitle name = {"Projects"}/>
+        <SubPageContainer>
+          <Project image = {<RoundedImg src = {onePalLogo} size = {"44px"} notRounded = {true}/>} name = {"One Palette"} link = {"#/projects/onepalette"} labels = {["macOS", "AppKit", "CoreData"]}>
+            <p>OnePalette is a modern material design color palette that
+              allows for quick and intuitive color lookups. OnePalette was designed and
+              implemented for frontend devs and UX designers in mind, allowing developers
+              and designers to stay on track and keep creating 🤙🏼</p>
+          </Project>
+          <Project image = {<RoundedImg src = {hapticLogo} size = {"44px"}/>} name = {"Haptic"} link = {"#/projects/haptic"} labels = {["iOS", "Swift", "UIKit"]}>
             <p>Haptic is a previously closed source App released on the app store that offered
               an iOS keyboard extension that gave the user access to a haptic feedback
               keyboard experience. The keyboard provides a small vibration to the users
@@ -79,12 +122,6 @@ function App() {
                XCT's goal is to make running tests git aia a CLI more accessible and practical
               </p>
           </Project>
-          <Project name = {"One Palette"} link = {"#/projects/onepalette"} labels = {["macOS", "AppKit"]}>
-            <p>OnePalette is a modern material design color palette that
-              allows for quick and intuitive color lookups. OnePalette was designed and
-              implemented for frontend devs and UX designers in mind, allowing developers
-              and designers to stay on track and keep creating 🤙🏼</p>
-          </Project>
           <Project name = {"Sheetie"} link = {"#/projects/sheetie"} labels = {["Plug-In"]}>
             <p>Sheetie is a sketch 3 plugin developed for indie game developers
               in mind. Sheetie creates vectorized sprite sheet objects that are
@@ -94,6 +131,16 @@ function App() {
             <p>Executable that can be used in the terminal or in automation tasks that will attempt
               to make a bluetooth connection to your AirPods</p>
           </Project>
+        </SubPageContainer>
+
+        <HeaderTitle name = {"Education"}/>
+        <SubPageContainer>
+          <HStack>
+            <h3>Western Michigan University</h3>
+            <Spacer/>
+            <p style={{color: "#a08bccFF"}}>Aug 2016 - May 2020</p>
+          </HStack>
+          <p>BS in Computer Science from the College of Engineering and Applied Sciences</p>
         </SubPageContainer>
       </PageContainer>
   );
