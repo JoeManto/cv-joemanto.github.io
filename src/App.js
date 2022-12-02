@@ -32,7 +32,7 @@ function App() {
             <RoundedImg src = {vmwLogo} size = {"50px"}></RoundedImg>
               <h3 style={{paddingLeft: "20px"}}>VMware</h3>
               <div style={{margin: "auto"}}></div> 
-              <h5>Member of Technical Staff 2</h5>
+              <h5 style={{color: "#a08bccFF"}}>Member of Technical Staff 2</h5>
           </HStack>
           <Centered style = {{marginBottom: "20px", position: "relative"}}>
             <p style={{position: "absolute", top: "40%", left: "-30px", backgroundColor: "black", padding: "10px"}}>2020</p>
@@ -54,7 +54,7 @@ function App() {
             <RoundedImg src = {wmLogo} size = {"50px"}></RoundedImg>
             <h3 style={{paddingLeft: "20px"}}>Western Michigan University</h3>
             <div style={{margin: "auto"}}></div> 
-            <h5>Student Lead & Web Dev</h5>
+            <h5 style={{color: "#a08bccFF"}}>Student Lead & Web Dev</h5>
           </HStack>
           <Centered style = {{borderLeft: "", position: "relative"}}>
             <p style={{position: "absolute", top: "30%", left: "-30px", backgroundColor: "black", padding: "10px"}}>2016</p>
@@ -104,7 +104,7 @@ function App() {
 
         <HeaderTitle name = {"Projects"}/>
         <SubPageContainer>
-          <Project image = {<RoundedImg src = {onePalLogo} size = {"44px"} notRounded = {true}/>} name = {"One Palette"} link = {"#/projects/onepalette"} labels = {["macOS", "AppKit", "CoreData"]}>
+          <Project image = {<RoundedImg src = {onePalLogo} size = {"44px"} notRounded = {true}/>} name = {"One Palette"} link = {"#/projects/onepalette"} labels = {["macOS",  "Swift", "AppKit", "CoreData"]}>
             <p>OnePalette is a modern material design color palette that
               allows for quick and intuitive color lookups. OnePalette was designed and
               implemented for frontend devs and UX designers in mind, allowing developers
