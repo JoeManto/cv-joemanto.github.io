@@ -18,8 +18,7 @@ function App() {
         </NavBar>
         <HeaderTitle name = {"About Me"}/>
         <PageTextContainer>
-        <p>I'm an iOS and macOS developer with 10 years of experience developing
-          apps, frameworks, and tools. Currently doing iOS and analytics work <a href="https://www.vmware.com/">@VMware</a></p>
+        <p>Experienced software engineer with a strong background in building, releasing, and maintaining iOS and macOS apps. Currently doing iOS and analytics work <a href="https://www.vmware.com/">@VMware</a></p>
           <Button style = {{marginTop:"20px", float:"right"}} name = {"Resume"} link = {"/resume.pdf"}/>
           <LinkWithImage imgSrc={twitterLogo} name={"@manto_joe"} link={"https://www.twitter.com/manto_joe"}/>
           <LinkWithImage imgSrc={githubLogo} name={"joemanto"} link={"https://www.github.com/joemanto"}/>
@@ -37,16 +36,17 @@ function App() {
           <Centered style = {{marginBottom: "20px", position: "relative"}}>
             <p style={{position: "absolute", top: "40%", left: "-30px", backgroundColor: "black", padding: "10px"}}>2020</p>
             <HStack basis = {"30%"} style = {{borderLeft: "1px #a08bccFF solid", paddingLeft: "30px"}}>
-              <BulletPoint>Provided code and design contributions for customer-facing NIAP-compliant (security standard) apps.</BulletPoint>
-              <BulletPoint>Led the design and development of in-app analytics efforts in two core apps. Allowing app stakeholders to make informed data-driven decisions</BulletPoint>
-              <BulletPoint>Implemented a Zoom OAuth client allowing zoom integration for users</BulletPoint>
-              <BulletPoint>Collaborated in and with internal and external agile teams all around the world</BulletPoint>
-              <BulletPoint>Designed and contributed to an iOS widget integration</BulletPoint>
-              <BulletPoint>Experience working on apps that utilize a central SDK</BulletPoint>
-              <BulletPoint>Experience working with apps that use Swift and Obj-C as well as UIKit and SwiftUI</BulletPoint>
-              <BulletPoint>Worked on apps that have native versions on multiple platforms (iOS & macOS & Android)</BulletPoint>
-              <BulletPoint>Worked on multiple distributed code bases</BulletPoint>
-              <BulletPoint>Experience working with CocoaPods and Swift Package Manager</BulletPoint>
+              <BulletPoint>Worked closely with designers and product managers to ensure that the app met user needs and business goals.</BulletPoint>
+              <BulletPoint>Led the design and development of in-app analytics efforts in two core apps. Allowing app stakeholders to make informed data-driven decisions.</BulletPoint>
+              <BulletPoint>Collaborated on multiple successful apps releases with, a proven track record of delivering high-quality code on time.</BulletPoint>
+              <BulletPoint>Implemented a Zoom OAuth client allowing zoom integration for users.</BulletPoint>
+              <BulletPoint>Collaborated in and with internal and external agile teams all around the world.</BulletPoint>
+              <BulletPoint>Experience working on apps that utilize a central SDK.</BulletPoint>
+              <BulletPoint>Experienced in developing and maintaining apps using Swift and Obj-C as well as frameworks like SwiftUI and UIKit</BulletPoint>
+              <BulletPoint>Worked on apps that have native versions on multiple platforms (iOS & macOS & Android).</BulletPoint>
+              <BulletPoint>Worked on multiple distributed code bases.</BulletPoint>
+              <BulletPoint>Experienced working with CocoaPods and Swift Package Manager.</BulletPoint>
+              <BulletPoint>Designed and contributed to an iOS widget integration.</BulletPoint>
             </HStack>
           </Centered>
 
@@ -99,6 +99,8 @@ function App() {
             <ProjectLabel name = "Jira"/>
             <ProjectLabel name = "BitBucket"/>
             <ProjectLabel name = "Bamboo"/>
+            <ProjectLabel name = "Swift Package Manager"/>
+            <ProjectLabel name = "CocoaPods"/>
           </HStack>
         </SubPageContainer>
 
@@ -140,7 +142,7 @@ function App() {
             <Spacer/>
             <p style={{color: "#a08bccFF"}}>Aug 2016 - May 2020</p>
           </HStack>
-          <p>BS in Computer Science from the College of Engineering and Applied Sciences</p>
+          <p>Bachelor of Science in Computer Science from the College of Engineering and Applied Sciences</p>
         </SubPageContainer>
       </PageContainer>
   );
