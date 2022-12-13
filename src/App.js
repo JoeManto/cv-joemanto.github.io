@@ -77,6 +77,7 @@ function App() {
             <ProjectLabel name = "Xcode"/>
             <ProjectLabel name = "SwiftUI"/>
             <ProjectLabel name = "UIKit"/>
+            <ProjectLabel name = "AutoLayout"/>
             <ProjectLabel name = "XCTest"/>
             <ProjectLabel name = "Combine"/>
             <ProjectLabel name = "WidgetKit"/>
@@ -91,6 +92,8 @@ function App() {
             <ProjectLabel name = "StoreKit"/>
             <ProjectLabel name = "SpriteKit"/>
             <ProjectLabel name = "SnapshotTesting"/>
+            <ProjectLabel name = "UI Tests"/>
+            <ProjectLabel name = "Unit Tests"/>
             <ProjectLabel name = "Accessibility Inspector"/>
             <ProjectLabel name = "Obj-C"/>
             <ProjectLabel name = "Git"/>
