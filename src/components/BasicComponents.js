@@ -276,6 +276,22 @@ export function HStack(props) {
     )
 }
 
+export function VStack(props) {
+    const style = {
+        display:"flex",
+        flexDirection:"column",
+        flexBasis: props.basis,
+        flexWrap: props.noWrap ? "no-wrap" : "wrap",
+        ...props.style
+    };
+
+    return(
+        <div style={style}>
+            {props.children}
+        </div>
+    )
+}
+
 export function BulletPoint(props) {
     const bulletStyle = {
         minWidth: "8px",

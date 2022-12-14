@@ -8,7 +8,7 @@ import vmwLogo from './res/vmw.png';
 import wmLogo from "./res/wmu.png";
 import hapticLogo from "./res/haptic-icon.png";
 import onePalLogo from "./res/onepal-icon.png";
-import {PageContainer,PageTextContainer,Spacer,HeaderTitle,NavBar,NavChild,Button,Project,SubPageContainer,LinkWithImage,RoundedImg,HStack,Centered,BulletPoint,ProjectLabel} from './components/BasicComponents.js';
+import {PageContainer,PageTextContainer,Spacer,HeaderTitle,NavBar,NavChild,Button,Project,SubPageContainer,LinkWithImage,RoundedImg,HStack,VStack,Centered,BulletPoint,ProjectLabel} from './components/BasicComponents.js';
 
 function App() {
   return (
@@ -34,19 +34,24 @@ function App() {
               <h5 style={{color: "#a08bccFF"}}>Member of Technical Staff 2</h5>
           </HStack>
           <Centered style = {{marginBottom: "20px", position: "relative"}}>
-            <p style={{position: "absolute", top: "40%", left: "-30px", backgroundColor: "black", padding: "10px"}}>2020</p>
+            <p style={{position: "absolute", top: "60%", left: "-30px", backgroundColor: "black", padding: "10px"}}>2020</p>
+            <p>Member of the apps team working on two enterprise MDM apps</p>
+            <HStack style = {{paddingBottom: "20px"}}>
+              <VStack style = {{width: "200px"}}>
+                <HStack><h4>Workspace One Boxer</h4><p style={{margin: "auto 10px", color: "#a08bccFF"}}>2 years</p></HStack>
+                <p>A security-focused email, calendar, and contacts app</p>
+              </VStack>
+              <VStack style = {{width: "250px", margin: "0 auto"}}>
+                <HStack><h4>Workspace One Intelligent Hub</h4><p style={{margin: "auto 10px", color: "#a08bccFF"}}>7 months</p></HStack>
+                <p>The central app for the Workspace One suite of apps</p>
+              </VStack>
+            </HStack>
             <HStack basis = {"30%"} style = {{borderLeft: "1px #a08bccFF solid", paddingLeft: "30px"}}>
-              <BulletPoint>Worked closely with designers and product managers to ensure that the app met user needs and business goals.</BulletPoint>
-              <BulletPoint>Led the design and development of in-app analytics efforts in two core apps. Allowing app stakeholders to make informed data-driven decisions.</BulletPoint>
-              <BulletPoint>Collaborated on multiple successful apps releases with, a proven track record of delivering high-quality code on time.</BulletPoint>
-              <BulletPoint>Implemented a Zoom OAuth client allowing zoom integration for users.</BulletPoint>
-              <BulletPoint>Collaborated in and with internal and external agile teams all around the world.</BulletPoint>
-              <BulletPoint>Experience working on apps that utilize a central SDK.</BulletPoint>
-              <BulletPoint>Experienced in developing and maintaining apps using Swift and Obj-C as well as frameworks like SwiftUI and UIKit</BulletPoint>
-              <BulletPoint>Worked on apps that have native versions on multiple platforms (iOS & macOS & Android).</BulletPoint>
-              <BulletPoint>Worked on multiple distributed code bases.</BulletPoint>
-              <BulletPoint>Experienced working with CocoaPods and Swift Package Manager.</BulletPoint>
-              <BulletPoint>Designed and contributed to an iOS widget integration.</BulletPoint>
+              <BulletPoint>Worked closely with designers, product managers, and other engineers in 60+ app releases ensuring that the apps met user needs and business goals</BulletPoint>
+              <BulletPoint>Provided software design and development contributions to an iOS widget integration that provided users with a calendar widget</BulletPoint>
+              <BulletPoint>Worked on many UI-related features that expanded my knowledge of the iOS SDK and automated UI testing </BulletPoint>
+              <BulletPoint>Worked on apps that have native versions on multiple platforms (iOS & macOS & Android)</BulletPoint>
+              <BulletPoint>Led the design and development of an in-app analytics engine that was deployed in two core apps that both have over 1 million monthly users. This enabled unique insights into user behavior and feature usage allowing app stakeholders to make informed data-driven decisions</BulletPoint>
             </HStack>
           </Centered>
 
@@ -97,7 +102,6 @@ function App() {
             <ProjectLabel name = "Accessibility Inspector"/>
             <ProjectLabel name = "Obj-C"/>
             <ProjectLabel name = "Git"/>
-            
             <ProjectLabel name = "Docker"/>
             <ProjectLabel name = "Xcode"/>
             <ProjectLabel name = "Jira"/>
