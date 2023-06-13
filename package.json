@@ -6,11 +6,14 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "@csstools/normalize.css": "^12.0.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "create-react-app": "^5.0.1",
     "gh-pages": "^2.1.1",
     "highlightjs": "^9.16.2",
+    "node-libs-browser": "^2.2.1",
     "radium": "^0.26.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -19,7 +22,8 @@
     "react-router-dom": "^5.1.2",
     "react-router-redux": "^4.0.8",
     "react-scripts": "^3.3.0",
-    "redux": "^4.0.4"
+    "redux": "^4.0.4",
+    "sanitize.css": "^13.0.0"
   },
   "devDependencies": {
     "typescript": "3.3.3"
