@@ -17,7 +17,7 @@ export class OnePalette extends React.Component {
 
                 <HeaderTitle name={"One Palette"}/>
                 <p>Open Source Project</p>
-                <LinkWithImage imgSrc={githubLogo} name={"checkout the repo"} link={"https://github.com/JoeManto/OnePalette"}/>
+                <LinkWithImage imgSrc={githubLogo} name={"checkout the repo"} link={"https://github.com/JoeManto/OnePalette"} height={"20px"}/>
 
                 <div style={{display:"flex",justifyContent:"center",margin:"60px 60px"}}>
                  <Image imgSrc = {onepal1} style = {{height:"300px"}}/>

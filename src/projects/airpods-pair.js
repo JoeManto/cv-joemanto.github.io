@@ -13,7 +13,7 @@ export class AirPodsPair extends React.Component{ render() {
 
             <HeaderTitle name={"AirPods Pair"}/>
             <p><strong>Open Source Command Line Tool</strong></p>
-            <LinkWithImage imgSrc={githubLogo} name={"checkout the repo for more info"} link={"https://github.com/JoeManto/AirPodsPair"}/>
+            <LinkWithImage imgSrc={githubLogo} name={"checkout the repo for more info"} link={"https://github.com/JoeManto/AirPodsPair"} height={"20px"}/>
             <PageTextContainer>
                 <p>Executable that can be used in the terminal
                     or in automation tasks that will attempt to make

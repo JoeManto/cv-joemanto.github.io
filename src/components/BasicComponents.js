@@ -247,13 +247,13 @@ export function SubPageContainer(props){
     )
 }
 
-export function LinkWithImage({imgSrc,name,link}) {
+export function LinkWithImage({imgSrc,name,link, height}) {
     const cntStyle = {
         display:"flex",
         flexDirection:"row",
     };
     const imgStyle = {
-        height: "20px",
+        height: height,
     };
     return(
         <HStack>

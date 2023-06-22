@@ -25,7 +25,7 @@ export class XCT extends React.Component{ render() {
 
             <HeaderTitle name={"XCT"}/>
             <p><strong>Open Source Command Line Tool [ On Going ]</strong></p>
-            <LinkWithImage imgSrc={githubLogo} name={"checkout the repo for more info"} link={"https://github.com/JoeManto/XCT"}/>
+            <LinkWithImage imgSrc={githubLogo} name={"checkout the repo for more info"} link={"https://github.com/JoeManto/XCT"} height={"20px"}/>
             <PageTextContainer>
                 <p> A preprocessing CLI wrapper on Apple's xcodebuild's test runner. XCT's goal
                     is to make running tests via a CLI more accessible and practical.</p>

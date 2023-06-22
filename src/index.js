@@ -7,6 +7,7 @@ import { Haptic } from './projects/haptic';
 import { OnePalette } from './projects/onePalette';
 import { AirPodsPair } from './projects/airpods-pair';
 import { XCT } from './projects/xct';
+import { SuperWindow } from './projects/superWindow';
 import { RetainCycles } from './blog/retainCycles';
 import * as serviceWorker from './serviceWorker';
 import {HashRouter,Route} from "react-router-dom";
@@ -21,6 +22,7 @@ class AppPointer extends React.Component {
                 <Route exact path ='/projects/onepalette' component = {OnePalette}/>
                 <Route exact path ='/projects/airpods-pair' component = {AirPodsPair}/>
                 <Route exact path ='/projects/xct' component = {XCT}/>
+                <Route exact path ='/projects/super-window' component = {SuperWindow}/>
                 <Route exact path = '/blog/arc-retain-cycles' component = {RetainCycles}/>
             </HashRouter>
         )

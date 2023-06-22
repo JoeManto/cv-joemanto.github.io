@@ -14,7 +14,7 @@ export class Haptic extends React.Component{ render() {
 
             <HeaderTitle name={"Haptic"}/>
             <p><strong>Open Source iOS keyboard extension</strong></p>
-            <LinkWithImage imgSrc={githubLogo} name={"checkout the repo"} link={"https://github.com/JoeManto/Haptic-Feedback-Keyboard"}/>
+            <LinkWithImage imgSrc={githubLogo} name={"checkout the repo"} link={"https://github.com/JoeManto/Haptic-Feedback-Keyboard"} height={"20px"}/>
             <PageTextContainer>
                 <p>Haptic is a previously closed source App released on the app store that offered an
                     iOS keyboard extension that gave the user access to a haptic feedback keyboard

@@ -14,7 +14,7 @@ export class Sheetie extends React.Component { render() {
 
             <HeaderTitle name={"Sheetie"}/>
             <p>Open Source Project</p>
-            <LinkWithImage imgSrc={githubLogo} name={"checkout the repo"} link={"https://github.com/JoeManto/Sprite"}/>
+            <LinkWithImage imgSrc={githubLogo} name={"checkout the repo"} link={"https://github.com/JoeManto/Sprite"} height={"20px"}/>
             <PageTextContainer style={{marginBottom: "100px"}}>
                 <Image imgSrc={sheetielogo2} name={"sheetielogo2"} style={{height: "300px"}}/>
                 <Image imgSrc={sheetielogo1} name={"sheetielogo1"} style={{height: "250px"}}/>
