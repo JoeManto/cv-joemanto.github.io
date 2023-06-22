@@ -47,6 +47,11 @@ export function HeaderTitle(props){
     return(
         <div style={style}>
             <h1 id = {props.name}>{props.name}</h1>
+            { props.subtitle ? (
+                <p>{props.subtitle}</p>
+            ) : (
+                <p></p>
+            )}
             <HRLine/>
         </div>
     )
@@ -292,6 +297,14 @@ export function VStack(props) {
     )
 }
 
+export function Quoted(props) {
+    return(
+        <VStack basis = {"30%"} style = {{borderLeft: "1px #a08bccFF solid", paddingLeft: "30px"}}>
+            {props.children}
+        </VStack>
+    )
+}
+
 export function BulletPoint(props) {
     const bulletStyle = {
         minWidth: "8px",
@@ -335,7 +348,7 @@ export function Image(props) {
 export function Code(props) {
     return(
         <div>
-            <Highlight className = {"code"} language = {"JavaScript"}>
+            <Highlight className = {"code"} language = {""}>
                 {props.code}
             </Highlight>
         </div>
