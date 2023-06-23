@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ac448f87a5a69d6b81a6afec0719f1b6",
+    "revision": "23d10bdaf5332c0d61388bab6f21b770",
     "url": "/index.html"
   },
   {
-    "revision": "81fbf38b5e66a374e91e",
+    "revision": "041c87d1efad8dc8bd51",
     "url": "/static/css/2.07b4c11c.chunk.css"
   },
   {
-    "revision": "5464a67e09999e6a22cc",
+    "revision": "e7e7ce44c39ee3ec2e53",
     "url": "/static/css/main.eddd1540.chunk.css"
   },
   {
-    "revision": "81fbf38b5e66a374e91e",
-    "url": "/static/js/2.c4165e30.chunk.js"
+    "revision": "041c87d1efad8dc8bd51",
+    "url": "/static/js/2.0692b57f.chunk.js"
   },
   {
     "revision": "3159dcd1f0681bdd4921a3bb6680c3d5",
-    "url": "/static/js/2.c4165e30.chunk.js.LICENSE"
+    "url": "/static/js/2.0692b57f.chunk.js.LICENSE"
   },
   {
-    "revision": "5464a67e09999e6a22cc",
-    "url": "/static/js/main.01b0d268.chunk.js"
+    "revision": "e7e7ce44c39ee3ec2e53",
+    "url": "/static/js/main.0050ad49.chunk.js"
   },
   {
     "revision": "165d041ca0119268afcc",
@@ -72,12 +72,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/onepal4.2837d009.png"
   },
   {
-    "revision": "ea2d5630aad329987582238094efa67e",
-    "url": "/static/media/retain-cycles-img1.ea2d5630.png"
+    "revision": "706d3634319669a28297cb06917ad721",
+    "url": "/static/media/retain-cycles-img1.706d3634.png"
   },
   {
-    "revision": "4196fa4c3186031d2a54685528f32696",
-    "url": "/static/media/retain-cycles-img2.4196fa4c.png"
+    "revision": "9b474697899e951c8b1b864dacb9e6b1",
+    "url": "/static/media/retain-cycles-img10.9b474697.png"
+  },
+  {
+    "revision": "2bfad724e292fa46f668f50ce9329b5a",
+    "url": "/static/media/retain-cycles-img11.2bfad724.png"
+  },
+  {
+    "revision": "ed908df09825804ef9e5530ab3a73287",
+    "url": "/static/media/retain-cycles-img12.ed908df0.png"
+  },
+  {
+    "revision": "4d3a929bf4bb018a0ee1a4994d68d2ac",
+    "url": "/static/media/retain-cycles-img2.4d3a929b.png"
   },
   {
     "revision": "8a21e9c359f00b6c8a423b619d533aac",
@@ -90,6 +102,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f422f3e842e802499cdc44586b79b708",
     "url": "/static/media/retain-cycles-img5.f422f3e8.png"
+  },
+  {
+    "revision": "04da844731f83e89ba1628df8d9f26c0",
+    "url": "/static/media/retain-cycles-img6.04da8447.png"
+  },
+  {
+    "revision": "e693cca984651c2c4db123496b4b432b",
+    "url": "/static/media/retain-cycles-img7.e693cca9.png"
+  },
+  {
+    "revision": "92f7b1b81bf9b5f36bb028c55ceebf1c",
+    "url": "/static/media/retain-cycles-img8.92f7b1b8.png"
+  },
+  {
+    "revision": "52982714e9ce0ec7e291463811cce833",
+    "url": "/static/media/retain-cycles-img9.52982714.png"
   },
   {
     "revision": "3b71a7109156c265f114cde8b83209da",
