@@ -62,7 +62,7 @@ function App() {
               in-app analytics engine that was deployed in two core apps
               that both have over 1 million monthly users.
  
-              Enabing unique insights into user behavior and
+              Enabling unique insights into user behavior and
               feature usage allowing app stakeholders to make informed
               data driven decisions
               </BulletPoint>
