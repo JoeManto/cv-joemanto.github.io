@@ -104,7 +104,7 @@ export class RetainCycles extends React.Component{ render() {
             <p>
             I will explain the idea of a strong reference later on,
              but for know just treat a strong reference as quote unquote normal reference.
-              Like the ones we've seen in the above examples
+              Like the ones we've seen in the above examples.
             </p>
 
             <p>
