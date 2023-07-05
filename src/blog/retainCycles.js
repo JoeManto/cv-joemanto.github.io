@@ -29,10 +29,10 @@ export class RetainCycles extends React.Component{ render() {
             <PageTextContainer>
 
             <SubHeaderTitle name={"ARC Definition"}/>
-            <p>Starting off with automatic reference counting or arc for short is basically
+            <p>ARC = automatic reference counting is basically
                 a memory allocator and deallocator that abstracts out memory management.
                 If you’re familiar with C then this deals with functions like malloc
-                and free in regards to dynamic memory
+                and free in regards to dynamic memory.
             </p>
 
             <SubHeaderTitle name={"Object Deallocation"}/>
@@ -56,7 +56,7 @@ export class RetainCycles extends React.Component{ render() {
             <Image imgSrc = {img1}/>
             
             <p>
-            Looking at the example It makes sense that once the function foo executes
+            Looking at the example It makes sense that once the function "example" executes
              and returns, our instance is no longer in memory as it’s out of scope and can’t be used.
             </p>
 
@@ -66,7 +66,7 @@ export class RetainCycles extends React.Component{ render() {
             </p>
 
             <p>
-            Assuming we ignoring any complier optimizations, breaking this down
+            Assuming we ignore any complier optimizations, breaking this down
              ClassA is being initialized and returns a reference to
              our new ClassA object in memory. This in turn increases the number of
               references being held on the object to 1. 
@@ -85,9 +85,9 @@ export class RetainCycles extends React.Component{ render() {
 
             <p>
             This time we have an extra reference pointing to the same object.
-             Meaning the reference count gets up to 2 and once the foo function
+             Meaning the reference count gets up to 2 and once the "example" function
               returns the reference count on the object goes to 1 keeping the
-               object alive past the scope of the foo function.  
+               object alive past the scope of the "example" function.  
             </p>
 
             <SubHeaderTitle name={"Retain Cycles"}/>
@@ -112,6 +112,7 @@ export class RetainCycles extends React.Component{ render() {
             </p>
 
             <Image imgSrc = {img3}/>
+            <p>Edit - Assume instance properties are not constants</p>
 
             <p>
             Here Class A holds a strong reference to Class B which holds a strong reference to Class C
